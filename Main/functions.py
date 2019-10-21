@@ -1,7 +1,7 @@
 from Main.models import Block
 
 
-def coord(points):
+def coords(points):
     """ Given points in (x,y, signal) format, approximate the position (x,y).
 
         Reading:
