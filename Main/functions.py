@@ -11,7 +11,6 @@ def coords(points):
     for index, val in enumerate(res):
 
       a.append(tuple(val))
-    print("After" + str(a))
 
     ws = sum(p[2] for p in a)
     a = tuple( (x,y,signal/ws) for (x,y,signal) in a )

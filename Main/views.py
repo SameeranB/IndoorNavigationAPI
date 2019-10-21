@@ -20,6 +20,7 @@ def block_register(request):
     grid = request.data.get('result')
     dist = request.data.get('distances')
     x, y = coords(dist['distances'])
+
     for i in grid:
         block = Block(
             block_id=i["gid"],
