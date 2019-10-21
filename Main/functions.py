@@ -6,7 +6,7 @@ from Main.models import Block
 def coords(points):
 
     # Weighted signal strength
-    print(points)
+    print("points" + points)
     res = json.loads(points)
     print(type(res))
     a=list()
