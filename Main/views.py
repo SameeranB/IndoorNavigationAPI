@@ -19,8 +19,7 @@ def block_register(request):
     """
     grid = request.data.get('result')
     dist = request.data.get('distances')
-    x = y = 0
-    # x, y = coords(dist)
+    x, y = coords(dist)
     for i in grid:
         block = Block(
             block_id=i["gid"],
