@@ -12,6 +12,7 @@ def coords(points):
     """
     # Weighted signal strength
     print(points)
+    points = points.strip('][').split(', ')
     for i in range(len(points)):
         points[i] = tuple(points[i])
     print("After" + points)
