@@ -1,2 +1,6 @@
+from Main.models import Block
+
+
 def coords(dist):
-    pass
+    for i,j in dist.items():
+        bl=Block.objects.get(tag=i)

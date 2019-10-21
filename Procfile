@@ -1,0 +1,1 @@
+web: gunicorn Reach.wsgi 0.0.0.0:$PORT
