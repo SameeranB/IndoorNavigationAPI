@@ -8,4 +8,4 @@ class Block(models.Model):
     lat = models.FloatField()
     lng = models.FloatField()
     quad = models.IntegerField()
-    tag = models.CharField(max_length=100)
+    tag = models.CharField(max_length=100, blank=True, null=True)

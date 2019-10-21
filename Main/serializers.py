@@ -3,12 +3,7 @@ from rest_framework import serializers
 from Main.models import Block
 
 
-class BlockRegisterSerializer(serializers.ModelSerializer):
-    distances = serializers.ListField()
 
-    class Meta:
-        model = Block
-        exclude = ['tag']
 
 
 class RouterRegisterSerializer(serializers.ModelSerializer):
