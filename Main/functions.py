@@ -6,7 +6,8 @@ from Main.models import Block
 def coords(points):
 
     # Weighted signal strength
-    res = json.loads(points)
+    values = points['distance']
+    res = json.loads(values)
     a=list()
     for index, val in enumerate(res):
 

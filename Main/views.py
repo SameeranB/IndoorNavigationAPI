@@ -18,8 +18,6 @@ def block_register(request):
     :return:
     """
     grid = request.data.get('result')
-    dist = request.data.get('distances')
-    x, y = coords(dist['distances'])
 
     for i in grid:
         block = Block(
@@ -30,4 +28,4 @@ def block_register(request):
             tag=''
         )
         block.save()
-    return Response({'x': x, 'y': y}, status=201)
+    return Response(status=201)
