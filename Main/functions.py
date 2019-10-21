@@ -11,8 +11,10 @@ def coords(points):
         * http://gis.stackexchange.com/questions/2850/what-algorithm-should-i-use-for-wifi-geolocation
     """
     # Weighted signal strength
+    print(points)
     for i in range(len(points)):
         points[i] = tuple(points[i])
+    print("After" + points)
 
     ws = sum(p[2] for p in points)
     points = tuple( (x,y,signal/ws) for (x,y,signal) in points )
