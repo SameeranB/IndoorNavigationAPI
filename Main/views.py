@@ -26,7 +26,8 @@ def block_register(request):
             block_id=i["gid"],
             lat=i['lat'],
             lng=i['lng'],
-            quad=i['quad']
+            quad=i['quad'],
+            tag=''
         )
         block.save()
     return Response({'x': x, 'y': y}, status=201)
